@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quản trị | LaptopStore</title>
+  <style>
+    :root{--red:#d70018;--line:#e5e7eb;--bg:#f3f4f6;--muted:#6b7280}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:#111827}
+    button,input,select,textarea{font:inherit}
+    .top{background:#111827;color:#fff;display:flex;align-items:center;gap:16px;padding:12px 20px;flex-wrap:wrap}
+    .top b{font-size:18px}.top b span{color:#fca5a5}
+    .top nav{display:flex;gap:4px;margin-left:16px}
+    .top nav button{background:none;border:0;color:#d1d5db;padding:8px 14px;border-radius:8px;cursor:pointer;font-weight:600}
+    .top nav button.on{background:#374151;color:#fff}
+    .top .sp{flex:1}
+    .top a,.top .lo{color:#d1d5db;font-size:14px;text-decoration:none;background:none;border:0;cursor:pointer}
+    main{max-width:1200px;margin:0 auto;padding:20px 14px}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:16px}
+    .stat{background:#fff;border-radius:10px;padding:16px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+    .stat small{color:var(--muted)}.stat b{display:block;font-size:24px;margin-top:4px}
+    .panel{background:#fff;border-radius:10px;padding:16px;box-shadow:0 1px 3px rgba(0,0,0,.08);margin-bottom:16px}
+    .panel h3{margin:0 0 12px}
+    .two{display:grid;grid-template-columns:1.4fr 1fr;gap:16px}
+    .bars{display:flex;align-items:flex-end;gap:10px;height:180px;padding-top:10px}
+    .bar{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;font-size:11px;color:var(--muted)}
+    .bar i{width:100%;background:var(--red);border-radius:5px 5px 0 0;min-height:3px}
+    .bar em{font-style:normal;color:#111827;font-weight:600;margin-bottom:3px}
+    table{width:100%;border-collapse:collapse;font-size:14px}
+    th,td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}
+    th{background:#f9fafb;font-size:12.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.03em}
+    .btn{padding:8px 14px;border-radius:8px;border:1px solid var(--red);background:var(--red);color:#fff;cursor:pointer;font-weight:600}
+    .btn.ghost{background:#fff;color:var(--red)}.btn.sm{padding:4px 10px;font-size:13px}
+    .btn.gray{background:#fff;border-color:#d1d5db;color:#374151}
+    .bar-tools{display:flex;gap:10px;margin-bottom:12px;flex-wrap:wrap}
+    .bar-tools input,.bar-tools select{padding:9px 12px;border:1px solid #d1d5db;border-radius:8px}
+    .bar-tools input{flex:1;min-width:200px}
+    .tag{display:inline-block;padding:2px 10px;border-radius:12px;font-size:12px;font-weight:700;background:#e5e7eb}
+    .tag.pending{background:#fef3c7;color:#92400e}.tag.processing{background:#dbeafe;color:#1e40af}
+    .tag.shipping{background:#ede9fe;color:#5b21b6}.tag.done{background:#dcfce7;color:#166534}.tag.cancelled{background:#fee2e2;color:#991b1b}
+    .off{opacity:.45}
+    dialog{border:0;border-radius:12px;padding:0;width:min(720px,94vw);box-shadow:0 20px 50px rgba(0,0,0,.35)}
+    dialog::backdrop{background:rgba(0,0,0,.5)}
+    .dlg{padding:20px}.dlg h3{margin:0 0 14px}
+    .grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    .grid2 label{display:block;font-size:12.5px;font-weight:600;margin-bottom:3px}
+    .grid2 input,.grid2 select,.grid2 textarea{width:100%;padding:9px 10px;border:1px solid #d1d5db;border-radius:8px}
+    .full{grid-column:1/-1}
+    .dlg .act{display:flex;gap:8px;justify-content:flex-end;margin-top:14px}
+    .err{background:#fef2f2;color:#b91c1c;border:1px solid #fecaca;padding:9px 12px;border-radius:8px;font-size:14px;margin-top:10px}
+    .login{max-width:380px;margin:90px auto;background:#fff;padding:26px;border-radius:12px;box-shadow:0 8px 30px rgba(0,0,0,.12)}
+    .login h2{margin:0 0 4px}.login p{color:var(--muted);margin:0 0 16px;font-size:14px}
+    .login input{width:100%;padding:11px;border:1px solid #d1d5db;border-radius:8px;margin-bottom:10px}
+    .login .btn{width:100%;padding:12px}
+    .scroll{overflow-x:auto}
+    .items{margin:0;padding-left:18px;font-size:13px;color:#4b5563}
+    .toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:#111827;color:#fff;padding:11px 18px;border-radius:10px;font-size:14px}
+    @media (max-width:800px){.two{grid-template-columns:1fr}.grid2{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script src="/js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LaptopStore - Laptop chính hãng, giá tốt</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="wrap">
+      <span>🚚 Miễn phí giao hàng đơn từ 5 triệu</span>
+      <span>🛡️ Bảo hành chính hãng · 1 đổi 1 trong 30 ngày</span>
+      <span>📞 Hotline: 1800 6666 (miễn phí)</span>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="wrap header-main">
+      <a class="logo" href="#/">Laptop<b>Store</b></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Danh mục">☰ <span>Danh mục</span></button>
+      <form class="search" id="searchForm" autocomplete="off">
+        <input id="searchInput" type="search" placeholder="Bạn muốn tìm laptop nào? (vd: gaming, macbook, i7…)">
+        <button type="submit" aria-label="Tìm kiếm">🔍</button>
+        <div class="suggest" id="suggest" hidden></div>
+      </form>
+      <a class="hbtn" href="#/lookup"><span>📦</span><small>Tra cứu<br>đơn hàng</small></a>
+      <a class="hbtn" href="#/cart"><span>🛒<i class="cart-badge" id="cartBadge">0</i></span><small>Giỏ<br>hàng</small></a>
+      <a class="hbtn" href="#/account"><span>👤</span><small id="userLabel">Đăng<br>nhập</small></a>
+    </div>
+    <nav class="nav" id="nav"><div class="wrap" id="navInner"></div></nav>
+  </header>
+
+  <main id="app" class="wrap"></main>
+
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div>
+        <h4>LaptopStore</h4>
+        <p>Hệ thống bán lẻ laptop chính hãng. Sản phẩm mới 100%, hóa đơn VAT đầy đủ, hỗ trợ trả góp 0%.</p>
+      </div>
+      <div>
+        <h4>Hỗ trợ khách hàng</h4>
+        <a href="#/lookup">Tra cứu đơn hàng</a>
+        <a href="#/products">Tất cả laptop</a>
+        <a href="#/account">Tài khoản của tôi</a>
+      </div>
+      <div>
+        <h4>Chính sách</h4>
+        <span>Bảo hành chính hãng 12–24 tháng</span>
+        <span>Đổi trả trong 30 ngày nếu lỗi nhà sản xuất</span>
+        <span>Giao hàng toàn quốc, nhận hàng kiểm tra rồi mới thanh toán</span>
+      </div>
+      <div>
+        <h4>Liên hệ</h4>
+        <span>123 Nguyễn Huệ, Quận 1, TP.HCM</span>
+        <span>Email: cskh@laptopstore.vn</span>
+        <span>8:00 – 21:30 mỗi ngày</span>
+      </div>
+    </div>
+    <div class="copy">© 2026 LaptopStore · Website demo, dữ liệu sản phẩm và giá chỉ mang tính minh họa.</div>
+  </footer>
+
+  <div id="toast" class="toast" hidden></div>
+  <script src="/js/app.js"></script>
+</body>
+</html>
